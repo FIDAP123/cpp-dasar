@@ -1,0 +1,10 @@
+header <cmath>
+https://en.cppreference.com/w/cpp/numeric/math/HUGE_VAL
+header <iostream>
+https://en.cppreference.com/w/cpp/header/iostream
+
+masih bingung menggunakan library,
+dan masih bingung dengan sistemnya
+yang menggunakan fungsi
+, lalu # yang berisi bukan hanya include
+, lalu ::
