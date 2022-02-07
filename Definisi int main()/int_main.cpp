@@ -1,4 +1,5 @@
 /*
+    https://www.geeksforgeeks.org/command-line-arguments-in-c-cpp/
     Definisi int main() :
     1.  int main () merupakan function yang berfungsi untuk menjalankan source code yang kita tulis
     2.  Untuk C++ sendiri source code harus di buat dengan function berbeda dengan python yang bisa dijalankan tanpa 
