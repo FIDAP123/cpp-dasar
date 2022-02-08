@@ -3,6 +3,8 @@
     1.  fungsi void jika berada di fungsinya maka 
         harus wajib menyertakan cout agar bisa tampil di console atau terminal.
     2.  Fungsi void tidak bisa di 
+    3.  untuk fungsi sendiri atau didalam matematika f(x) 
+        kita bisa memakai variable x yang sama dalam jika kita mengganti variable f dalam f(x)
 */
 #include<iostream>
 
