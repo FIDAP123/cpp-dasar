@@ -6,9 +6,8 @@
     4.  function dengan return harus ada deklarasi sebagai penentu variable awal.
     5.  penulisan pada fungsi return di fungsi main harus menyertakan cout 
         agar dapat tampil di console.
-    6.  fungsi void jika berada di fungsinya maka 
-        harus wajib menyertakan cout agar bisa tampil di console atau terminal.
-    7.  Fungsi void tidak bisa di 
+    6.  untuk fungsi sendiri atau didalam matematika f(x) 
+        kita bisa memakai variable x yang sama dalam jika kita mengganti variable f dalam f(x)
 */
 
 #include<iostream>
