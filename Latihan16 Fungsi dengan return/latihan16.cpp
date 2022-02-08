@@ -23,6 +23,12 @@ int tambah (int a, int b)
     return c;
 }
 
+void tampilkan(int input1)
+{
+    std::cout << "menampilkan void = ";
+    std::cout << input1 << std::endl;
+}
+
 int main(int argc, char const *argv[])
 {
     int hasil;
@@ -49,7 +55,9 @@ int main(int argc, char const *argv[])
     std::cin >> input1;
     std::cout << "masukkan nilai tambah huruf 2 = ";
     std::cin >> input2;
-    std::cout << "nilai tambah dengan var = " << tambah(input1,input2) << std::endl;
-    
+    std::cout << "nilai tambah dengan var = " << tambah(input1,input2) << std::endl << std::endl;
+
+    tampilkan(hasil);
+
     return 0;
 }
