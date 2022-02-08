@@ -26,5 +26,7 @@
     "**/.*/**",
     "**/.vscode",
     "**/.vscode/**"
-  ]
+  ],
+  "workbench.iconTheme": "vscode-icons",
+  "workbench.colorTheme": "Default Dark+",
 }
