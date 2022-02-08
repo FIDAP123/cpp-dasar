@@ -1,8 +1,8 @@
 /*
     Latihan 16 Fugsi dengan return :
     1.  membuat fungsi return yang hampir sama seperti fungsi int main (), fungsi return atau fungsi kembalian adalah   
-        fungsi yang akan mengembalikan nilainya conntoh dalam matematika f(x)=x*x maka sama saja y=x*x dalam hal ini yang menjadi kembaliannya yaitu nilai y yang merupakan hasil dari x*x
-    2.  Dalam fungsi di C++ selalu ada 
+        fungsi yang akan mengembalikan fungsi itu sendiri sehingga fungsi dapat tampil di konsol dengan perantara variable lain
+    2.  function harus ada deklarasi sebagai penentu variable awal. 
 */
 
 #include<iostream>
