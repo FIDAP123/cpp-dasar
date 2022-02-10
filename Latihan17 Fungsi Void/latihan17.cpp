@@ -2,8 +2,9 @@
     Latihan 17 Fungsi Void atau Fungsi tanpa kembali atau tanpa return :
     1.  fungsi void jika berada di fungsinya maka 
         harus wajib menyertakan cout agar bisa tampil di console atau terminal.
-    2.  Fungsi void tidak bisa di 
-    3.  untuk fungsi sendiri atau didalam matematika f(x) 
+    2.  Fungsi void bisa disebut worker karena fungsi ini hanya menjalankan saja tanpa memberikan kembalian.
+    3.  Void di dalam fungsi void itu merupakan deklarasi.
+    4.  untuk fungsi sendiri atau didalam matematika f(x) 
         kita bisa memakai variable x yang sama dalam jika kita mengganti variable f dalam f(x)
 */
 #include<iostream>

@@ -2,7 +2,7 @@
     Latihan 16 Fugsi dengan return :
     1.  membuat fungsi return yang hampir sama seperti fungsi int main (), 
         fungsi return atau fungsi kembalian adalah fungsi yang akan mengembalikan fungsi itu sendiri sehingga fungsi dapat tampil di konsol dengan perantara variable lain.
-    2.  Void di dalam fungsi void itu merupakan deklarasi.
+    2.  fungsi return ini bisa disebut reporter jadi fungsi ini bisa melaporkan kembali atau memberikan kembalian.
     4.  function dengan return harus ada deklarasi sebagai penentu variable awal.
     5.  penulisan pada fungsi return di fungsi main harus menyertakan cout 
         agar dapat tampil di console.
