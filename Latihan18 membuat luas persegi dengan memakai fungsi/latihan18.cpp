@@ -7,7 +7,7 @@
 
 double Luas(double pL, double lL)
 {
-    return pL*lL;// begitupun dengan fungsi ini, fungsi ini akan masuk ke fungsi void dibawah, dan fungsi void akan masuk ke fungsi main
+    return pL*lL;// begitupun dengan fungsi ini, fungsi ini akan masuk ke fungsi void dibawah, dan fungsi void akan masuk ke fungsi main dan di inputan fungsi akan dimasukkan variable sesuai yang kita tuliskan
 }
 
 double keliling(double pk, double lk)
@@ -17,7 +17,7 @@ double keliling(double pk, double lk)
 
 void hasil_luas(double hasil_pL, double hasil_lL)
 {
-    std::cout << "Luas = " << Luas(hasil_pL,hasil_lL) << std::endl;//disini fungsi akan terpaggil dari int main(), disini fungsi akan terhubung jika kita menuliskan kode yang sama seperti 2 tipedata dan variable diatas
+    std::cout << "Luas = " << Luas(hasil_pL,hasil_lL) << std::endl;//disini fungsi akan terpaggil dari int main(), disini fungsi akan terhubung jika kita menuliskan kode yang sama di kedua inputan fungsinya
 }
 
 void hasil_keliling(double hasil_pk, double hasil_lk)
@@ -34,7 +34,7 @@ int main(int argc, char const *argv[])
     std::cout << "masukkan lebar = ";
     std::cin >> input_l;
 
-    hasil_luas(input_p,input_l);//maksutnya kita mengisi 2 tipe data dari fungsi void hasil luas, kita mengganti hasil_pk dan hasil_lk menjadi bilangan inputan dari yang kita ketik, dan data tersebut harus berupa angka karena tipe datanya double
+    hasil_luas(input_p,input_l);//maksutnya kita memanggil dari fungsi void hasil luas dengan mengisi input nya sesuai yang kita tuliskan pada variable input_p dan input_l, kita mengganti hasil_pk dan hasil_lk menjadi bilangan inputan dari yang kita ketik, dan data tersebut harus berupa angka karena tipe datanya double.
     hasil_keliling(input_p,input_l);
     return 0;
 }
