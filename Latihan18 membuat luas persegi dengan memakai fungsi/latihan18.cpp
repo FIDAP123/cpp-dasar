@@ -1,5 +1,5 @@
 /*
-    latihan18 membuat luas persegi dengan memanfaatkan fungsi return dan void
+    latihan 18 membuat luas persegi dengan memanfaatkan fungsi return dan void
     1.  membuat luas dan keliling kita harus tahu rumusnya terlebih dahulu, kemudian kita hubungkan dengan menyamakan 
         input fungsi dengan variablenya
 */

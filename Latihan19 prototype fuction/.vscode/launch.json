@@ -9,13 +9,13 @@
         ""
       ],
       "stopAtEntry": false,
-      "cwd": "d:/Data/Programing languages/C++/Latihan/Latihan18 membuat luas persegi dengan memakai fungsi",
+      "cwd": "d:/Data/Programing languages/C++/Latihan/Latihan19 prototype fuction",
       "environment": [],
-      "program": "d:/Data/Programing languages/C++/Latihan/Latihan18 membuat luas persegi dengan memakai fungsi/build/Debug/outDebug",
+      "program": "d:/Data/Programing languages/C++/Latihan/Latihan19 prototype fuction/build/Debug/outDebug",
       "internalConsoleOptions": "openOnSessionStart",
       "MIMode": "gdb",
       "miDebuggerPath": "C:/msys64/mingw64/bin/gdb.exe",
-      "externalConsole": false,
+      "externalConsole": true,
       "setupCommands": [
         {
           "description": "Enable pretty-printing for gdb",
