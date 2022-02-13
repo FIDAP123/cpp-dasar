@@ -5,7 +5,8 @@
     2.  default argumen jika ditaruh di argumen pertama maka dalam fungsi ini double a=0 maka argumen kedua harus ditulis 
         default argumennya dalam fungsi ini double t=0
     3.  default argumen jika ditaruh di tengah"nya maka argumen setelahnya harus ditulis
-    4.  
+    4.  default argumen jika ditaruh di akhir maka di argumen awal dan seterusnya sampai argumen sebelum terakhir tidak 
+        apa" jika tidak dituliskan
 */
 #include<iostream>
 
