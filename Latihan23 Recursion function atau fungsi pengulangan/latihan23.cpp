@@ -31,7 +31,7 @@ int perkalian_rekursif(int a, int b)
     if (b<=0)
     {
         hasil=0;
-        return hasil;
+        return hasil;//ini gunanya untuk mengisi nilai dari fungsi yang direkursif atau diulang pada saat syarat if terpenuhi akibatnya fungsi bisa dijalankan
     }
     else
     {
