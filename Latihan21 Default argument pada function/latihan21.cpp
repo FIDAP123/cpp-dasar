@@ -15,7 +15,7 @@ double volume_prisma_segitiga(double a, double t=0, double T=0);
 
 int main(int argc, char const *argv[])
 {
-    std::cout << "Luas segitiga = " << luas_segitiga(5,4) << std::endl;//kita bisa mengeksekusi perintah ini tanpa memberikan argumennya karena kita sudah menuliskan defaultnya diatasnya, jika kita menuliskan argumennya maka defaulrnya akan tergantikan karena default akan mengisi ketika kita tidak menulis argumen dari fungsinya
+    std::cout << "Luas segitiga = " << luas_segitiga(5,4) << std::endl;//kita bisa mengeksekusi perintah ini tanpa memberikan argumennya karena kita sudah menuliskan defaultnya diatasnya, jika kita menuliskan argumennya maka defaultnya akan tergantikan karena default akan mengisi ketika kita tidak menulis argumen dari fungsinya
     std::cout  << "Volume prisma segitiga = " << volume_prisma_segitiga(2,4,6) << std::endl;
     
     return 0;
