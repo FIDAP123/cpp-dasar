@@ -7,23 +7,25 @@ int faktorial(int a)
 {
     if (a==1)
     {
+        std::cout << a << "= " ;
         return a;
     }
     else
     {
+        std::cout << a << "*";
         return a * faktorial(a-1);
     }
 }
 
 void p_faktorial(int a)
 {
-    std::cout << "faktorial = " << faktorial(a) << std::endl;
+    std::cout << a << "!= " << faktorial(a) << std::endl;
 }
 
 int main(int argc, char const *argv[])
 {
     int a;
-    
+
     std::cout << "masukkan nilai faktorial = ";
     std::cin >> a;
     std::cout << "\n";
