@@ -1,11 +1,11 @@
 /*
     Latihan 17 Fungsi Void atau Fungsi tanpa kembali atau tanpa return :
-    1.  fungsi void jika berada di fungsinya maka 
+    1.  void artinya kosong, void tidak memiliki tipe data dalam deklarasi, tidak dapat langsung 
+        menampilkan hasil, tidak memiliki nilai kembalian ( return value ), tidak menggunakan kata kunci return.
+    2.  fungsi void jika berada di fungsinya maka 
         harus wajib menyertakan cout agar bisa tampil di console atau terminal.
-    2.  Fungsi void bisa disebut worker karena fungsi ini hanya menjalankan saja tanpa memberikan 
+    3.  Fungsi void bisa disebut worker karena fungsi ini hanya menjalankan saja tanpa memberikan 
         kembalian, karena fungsi ini bernilai 0 makanya tidak ada nilai yang dikembalikan.
-    3.  void artinya kosong, void merupakan deklarasi dan dia tidak memiliki tipe data 
-        datanya kosong.
 
 */
 #include<iostream>
