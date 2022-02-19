@@ -73,7 +73,15 @@ void p_rekursif(int a, int b)
 
 int main(int argc, char const *argv[])
 {
-    p_iterasi(2,3);
-    p_rekursif(3,2);
+    int a,b;
+    std::cout << "masukkan nilai a= ";
+    std::cin >> a;
+    std::cout << "\nmasukkan nilai b= ";
+    std::cin >> b;
+
+
+    p_iterasi(a,b);
+    p_rekursif(a,b);
+    
     return 0;
 }
