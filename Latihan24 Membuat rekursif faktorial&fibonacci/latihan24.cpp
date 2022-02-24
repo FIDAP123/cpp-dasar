@@ -14,6 +14,7 @@ int faktorial(int a)
     {
         std::cout << a << "*";
         return a * faktorial(a-1);
+        
     }
 }
 
