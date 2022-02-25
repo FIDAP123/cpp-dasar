@@ -6,7 +6,7 @@
 */
 #include<iostream>
 
-int perkalian_iterasi(int a, int b)
+long perkalian_iterasi(int a, int b)
 {
     int hasil;
     for (int i = 1; i < b; i++)
@@ -49,7 +49,8 @@ int pangkat_rekursif(int a, int b)
     }
     // else if (b>1)
     // {
-    //     return a*pangkat_rekursif(a,b-1);//perintah ini bisa dilakukan tapi akan menimbulkan warning karena perintah ini kurang cocok, perintah yang lebih cocok hanya memakai if dan else
+    //     return a*pangkat_rekursif(a,b-1);//perintah ini bisa dilakukan tapi akan menimbulkan warning karena perintah 
+                                            //ini kurang cocok, perintah yang lebih cocok hanya memakai if dan else
     // }
     else
     {
