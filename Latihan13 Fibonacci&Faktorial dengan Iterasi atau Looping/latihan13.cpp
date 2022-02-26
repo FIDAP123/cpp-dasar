@@ -23,7 +23,6 @@ int main()
     
     fn1F = 1;
     fn2F = 0;
-    iF = 2;
     
     std::cout << "masukkan n di Do While = ";
     std::cin >> nDW;
