@@ -51,8 +51,10 @@ int main()
     std::cout << "Looping dalam Looping" << std::endl;
     std::cout << std::endl;
 
+    /*----------------------Membuat segitiga dengan spasi-------------------------------*/
     std::cout << "---SEGITIGA SIKU-SIKU dengan spasi---" << std::endl;
     std::cout << std::endl;
+    
     std::cout << "masukkan nilai pola segitiga siku\" 1= ";
     std::cin >> n;
     for (int pola_segitiga = 1; pola_segitiga <= n ; pola_segitiga++)//looping pertama berfungsi sebagai baris
@@ -241,6 +243,199 @@ int main()
         for (int pola_sama_kaki2 = rumus_baris2 ;pola_sama_kaki2 >= pola_segitiga2 ; pola_sama_kaki2--)
         {
             std::cout << "* ";//untuk menampilkan ke layar
+        }
+        std::cout << std::endl;
+    }
+    
+     /*----------------------Membuat segitiga tanpa spasi-------------------------------*/
+    std::cout << "---SEGITIGA SIKU-SIKU tanpa spasi---" << std::endl;
+    std::cout << std::endl;
+
+    std::cout << "masukkan nilai pola segitiga siku\" 1= ";
+    std::cin >> n;
+    for (int pola_segitiga = 1; pola_segitiga <= n ; pola_segitiga++)//looping pertama berfungsi sebagai baris
+    {
+        for (int pola_siku1 = 1; pola_siku1 <= 1+(pola_segitiga-1)*1 ; pola_siku1++)//for yang kedua berguna utuk penambahan segitiga, dan sekaligus penambahan rumus
+        {
+            std::cout << "*";//untuk menampilkan ke layar
+        }
+        std::cout << std::endl;//untuk sebagai akhir line atau eenternya
+    }
+    
+    std::cout << "masukkan nilai pola segitiga siku\" 2= ";
+    std::cin >> n;
+    rumus_baris=0+(n-1)*1;
+    for (int pola_segitiga = 1; pola_segitiga <= n ; pola_segitiga++)
+    {
+        for (int pola_siku2 = 1; pola_siku2 <= rumus_baris; pola_siku2++)
+        {
+            std::cout << " " ;
+        }
+        for (int pola_siku2 = 1; pola_siku2 <= 1+(pola_segitiga-1)*1 ; pola_siku2++)
+        {
+            std::cout << "*";
+        }
+        std::cout << std::endl;
+        rumus_baris-=1;
+    }
+    
+    std::cout << "masukkan nilai pola segitiga siku\" 3= ";
+    std::cin >> n;
+
+    for (int pola_segitiga = 1; pola_segitiga <= n ; pola_segitiga++)//untuk looping dalam looping kita harus memakai 
+    //2 variable untuk menampilkan huruf yang mau kita tampilkan
+    {
+        for (int pola_siku3 = 1; pola_siku3 <= 0+(pola_segitiga-1)*1 ; pola_siku3++)
+        {
+            std::cout << " ";
+        }
+        for (int pola_siku3 = n; pola_siku3 >= 1+(pola_segitiga-1)*1 ; pola_siku3--)
+        {
+            std::cout << "*";
+        }
+        std::cout << std::endl;
+    }
+       
+    std::cout << "masukkan nilai pola segitiga siku\" 4= ";
+    std::cin >> n;
+    for (int pola_segitiga = 1; pola_segitiga <= n ; pola_segitiga++)//untuk looping dalam looping kita harus memakai 
+    //2 variable untuk menampilkan huruf yang mau kita tampilkan
+    {
+       
+        for (int pola_siku4 = n; pola_siku4 >= 1+(pola_segitiga-1)*1 ; pola_siku4--)
+        {
+            std::cout << "*";
+        }
+        std::cout << std::endl;
+    }
+    
+    std::cout << "---------SEGITIGA SEMBARANG-------" << std::endl;
+    std::cout << std::endl;
+    std::cout << "masukkan nilai pola segitiga sembarang\" 1= ";
+    std::cin >> n;
+    for (int pola_segitiga = 1; pola_segitiga <= n ; pola_segitiga++)//untuk looping dalam looping kita harus memakai 
+    //2 variable untuk menampilkan huruf yang mau kita tampilkan
+    {
+        for (int pola_sembarang1 = 1; pola_sembarang1 <= 0+(pola_segitiga-1)*1 ; pola_sembarang1++)
+        {
+            std::cout << " ";
+        }
+        for (int pola_sembarang1 = 1; pola_sembarang1 <= 1+(pola_segitiga-1)*1 ; pola_sembarang1++)
+        {
+            std::cout << "*";
+        }
+        std::cout << std::endl;
+    }
+
+    std::cout << "masukkan nilai pola segitiga sebarang\" 2= ";
+    std::cin >> n;
+    for (int pola_segitiga = 1; pola_segitiga <= n ; pola_segitiga++)//untuk looping dalam looping kita harus memakai 
+    //2 variable untuk menampilkan huruf yang mau kita tampilkan
+    {
+        for (int pola_sembarang2 = n; pola_sembarang2 >= 1+(pola_segitiga-1)*1 ; pola_sembarang2--)
+        {
+            std::cout << " ";
+        }
+        for (int pola_sembarang2 = n; pola_sembarang2 >= pola_segitiga ; pola_sembarang2--)
+        {
+            std::cout << "*";
+        }
+        std::cout << std::endl;
+    }
+
+    std::cout << "------SEGITIGA SAMA KAKI--------" << std::endl;
+    std::cout << std::endl;
+    std::cout << "masukkan nilai pola segitiga sama kaki 1= ";
+    std::cin >> n;
+    rumus_baris= 0+(n-1)*1;//tidak menulis int lagi karena sudah di deklarasikan sebelumnya
+    for (int pola_segitiga = 1; pola_segitiga <= n ; pola_segitiga++)//untuk looping dalam looping kita harus memakai 
+    //2 variable untuk menampilkan huruf yang mau kita tampilkan
+    {
+        for (int pola_sama_kaki1 = 1; pola_sama_kaki1 <= rumus_baris;pola_sama_kaki1++)
+        {
+            std::cout << " ";
+        }
+        for (int pola_sama_kaki1 = 1; pola_sama_kaki1 <= pola_segitiga ; pola_sama_kaki1++)
+        {
+            std::cout << "*";
+        }
+        for (int pola_sama_kaki1 = 2; pola_sama_kaki1 <= pola_segitiga ; pola_sama_kaki1++)
+        {
+            std::cout << "*";
+        }
+        rumus_baris -=1;
+        std::cout << std::endl;
+    }
+    
+    std::cout << "masukkan nilai pola segitiga sama kaki 2= ";
+    std::cin >> n;
+    for (int pola_segitiga = 1; pola_segitiga <= n ; pola_segitiga++)//untuk looping dalam looping kita harus memakai 
+    //2 variable untuk menampilkan huruf yang mau kita tampilkan
+    {
+        for (int pola_sama_kaki2 = 1; pola_sama_kaki2 <= 0+(pola_segitiga-1)*1; pola_sama_kaki2++)
+        {
+            std::cout << " ";
+        }
+        for (int pola_sama_kaki2 = n; pola_sama_kaki2 >= pola_segitiga ; pola_sama_kaki2--)
+        {
+            std::cout << "*";
+        }
+        for (int pola_sama_kaki2 = n-1; pola_sama_kaki2 >= pola_segitiga ; pola_sama_kaki2--)
+        {
+            std::cout << "*";
+        }
+        std::cout << std::endl;
+    }
+   
+    std::cout << "masukkan nilai pola segitiga sama kaki 3= ";
+    std::cin >> n;
+    for (int pola_segitiga1 = 1; pola_segitiga1 <= n ; pola_segitiga1++)//untuk looping dalam looping kita harus memakai 
+    //2 variable untuk menampilkan huruf yang mau kita tampilkan
+    {
+        for (int pola_sama_kaki2 = 1; pola_sama_kaki2 <= pola_segitiga1 ; pola_sama_kaki2++)
+        {
+            std::cout << "*";//untuk menampilkan ke layar
+        }
+        std::cout << std::endl;
+    }
+    for (int pola_segitiga2 = 1; pola_segitiga2 <= n ; pola_segitiga2++)//untuk looping dalam looping kita harus memakai 
+    //2 variable untuk menampilkan huruf yang mau kita tampilkan
+    {
+        for (int pola_sama_kaki2 = n-1; pola_sama_kaki2 >= pola_segitiga2 ; pola_sama_kaki2--)
+        {
+            std::cout << "*";//untuk menampilkan ke layar
+        }
+        std::cout << std::endl;
+    }
+    
+    std::cout << "masukkan nilai pola segitiga sama kaki 4= ";
+    std::cin >> n;
+    rumus_segitiga = 0+(n-1)*1;
+    for (int pola_segitiga1 = 1; pola_segitiga1 <= n ; pola_segitiga1++)//untuk looping dalam looping kita harus memakai 
+    //2 variable untuk menampilkan huruf yang mau kita tampilkan
+    {
+        for (int pola_sama_kaki2 = 1; pola_sama_kaki2 <= rumus_segitiga ; pola_sama_kaki2++)
+        {
+            std::cout << " ";//untuk menampilkan ke layar
+        }
+        
+        for (int pola_sama_kaki2 = 1; pola_sama_kaki2 <= 1+(pola_segitiga1-1)*1 ; pola_sama_kaki2++)
+        {
+            std::cout << "*";//untuk menampilkan ke layar
+        }
+        rumus_segitiga-=1;
+        std::cout << std::endl;
+    }
+    for (int pola_segitiga2 = 1; pola_segitiga2 <= n-1 ; pola_segitiga2++)//untuk looping dalam looping kita harus memakai 
+    //2 variable untuk menampilkan huruf yang mau kita tampilkan
+    {
+        for (int pola_sama_kaki2 = 1; pola_sama_kaki2 <= 1+(pola_segitiga2-1)*1 ; pola_sama_kaki2++)
+        {
+            std::cout << " ";//untuk menampilkan ke layar
+        }
+        for (int pola_sama_kaki2 = n-1 ;pola_sama_kaki2 >= pola_segitiga2 ; pola_sama_kaki2--)
+        {
+            std::cout << "*";//untuk menampilkan ke layar
         }
         std::cout << std::endl;
     }
