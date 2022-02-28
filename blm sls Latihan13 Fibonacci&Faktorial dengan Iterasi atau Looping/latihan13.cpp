@@ -27,6 +27,10 @@ int main()
     std::cout << "masukkan n di Do While = ";
     std::cin >> nDW;
     std::cout << fn1DW << " ";
+    
+    std::cout << "---------------Fibonacci--------------------\n";
+    std::cout << std::endl;
+
     do
     {
         fnDW = fn1DW + fn2DW;//untuk sebagai update fnDW
@@ -67,5 +71,21 @@ int main()
         std::cout << fnF << " ";
     }
     
+    std::cout << "---------------Faktorial--------------------\n";
+    std::cout << std::endl;
+
+    int n, hasil, f1, f2;
+    std::cout<< "faktorial = ";
+    std::cin >> n;
+    std::cout<< n << "! = \n";
+    for (int i = 1; i <= n; i++)
+    {
+        f1=1;
+        f2 = f1+1;
+        hasil = f2*f1;
+
+    }
+    std::cout << hasil;
+
     return 0;
 }
