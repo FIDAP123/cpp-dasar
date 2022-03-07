@@ -26,5 +26,6 @@
     "**/.*/**",
     "**/.vscode",
     "**/.vscode/**"
-  ]
+  ],
+  "workbench.colorTheme": "Solarized Dark",
 }

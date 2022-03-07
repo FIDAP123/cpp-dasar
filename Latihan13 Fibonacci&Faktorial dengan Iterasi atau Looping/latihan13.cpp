@@ -24,12 +24,10 @@ int main()
     fn1F = 1;
     fn2F = 0;
     
+    std::cout << "---------------Fibonacci--------------------\n";
     std::cout << "masukkan n di Do While = ";
     std::cin >> nDW;
     std::cout << fn1DW << " ";
-    
-    std::cout << "---------------Fibonacci--------------------\n";
-    std::cout << std::endl;
 
     do
     {
@@ -71,36 +69,39 @@ int main()
         std::cout << fnF << " ";
     }
     
-    std::cout << "---------------Faktorial--------------------\n";
+    std::cout << "\n---------------Faktorial--------------------\n";
     std::cout << std::endl;
 
     int n, hasil, f1, f2;
     std::cout<< "faktorial = ";
     std::cin >> n;
-    while (true)
-    {
         
         if (n<0)
         {
             std::cout << "error\n";
+            
         }
         else if (n==0)
         {
             std::cout<< n << "! = " << n;
+            
         }
         else
         {
             std::cout<< n << "! = ";
-            for (int i = 1; i <= n; i++)
+            f1=1;
+            hasil = f1;
+            f2 = 2;
+            for (int i = 2; i <= n; i++)
             {
-                f1=1;
-                f2 = f1+1;
                 hasil = f2*f1;
+                f1= hasil;
+                f2++;
 
             }
             std::cout << hasil<< std::endl;
+            
         }
-    }
     
     return 0;
 }
