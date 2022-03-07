@@ -77,15 +77,30 @@ int main()
     int n, hasil, f1, f2;
     std::cout<< "faktorial = ";
     std::cin >> n;
-    std::cout<< n << "! = \n";
-    for (int i = 1; i <= n; i++)
+    while (true)
     {
-        f1=1;
-        f2 = f1+1;
-        hasil = f2*f1;
+        
+        if (n<0)
+        {
+            std::cout << "error\n";
+        }
+        else if (n==0)
+        {
+            std::cout<< n << "! = " << n;
+        }
+        else
+        {
+            std::cout<< n << "! = ";
+            for (int i = 1; i <= n; i++)
+            {
+                f1=1;
+                f2 = f1+1;
+                hasil = f2*f1;
 
+            }
+            std::cout << hasil<< std::endl;
+        }
     }
-    std::cout << hasil;
-
+    
     return 0;
 }
