@@ -40,5 +40,7 @@ int main(int argc, char const *argv[])
     std::cout<< "memori kosong atau null pointer yag diisi = " << isi1_nullPtr << std::endl;
     std::cout<< "memori nilai dari aPtr = " << *bPtr << std::endl;
     
+    
+
     return 0;
 }
