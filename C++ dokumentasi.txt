@@ -1,1 +1,1 @@
-httpcplusplus.comdoctutorial
+https://www.cplusplus.com/doc/tutorial/

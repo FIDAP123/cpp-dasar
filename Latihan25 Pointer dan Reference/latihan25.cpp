@@ -2,8 +2,9 @@
     Latihan 25 Pointer :
     1. a.   pointer berguna mengatur memori pada tipe data tertentu
        b.   perintah &a adalah addresing atau pengalamatan memori, misal &a maksudnya kita ingin memanggil addressing dari a
-       c.  pointer dilambangkan *
-    2. a.  reference adalah pengelamatan memori yang sama-sama disimpan oleh 2 variable
+       c.   pointer dilambangkan *
+       d.   pointer tidak cocok dijadikan inputan karena jika dijadikan inputan maka poiter harus berisi pengalamatan memorinya bukan valuenya
+    2. a.   reference adalah pengelamatan memori yang sama-sama disimpan oleh 2 variable
 */
 #include<iostream>
 

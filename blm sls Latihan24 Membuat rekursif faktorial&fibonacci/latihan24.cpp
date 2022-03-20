@@ -9,6 +9,7 @@ void p_faktorial(int a);
 int fibonacci (int a);
 void p_fibonacci(int a);
 
+
 int main(int argc, char const *argv[])
 {
     int a;
@@ -43,29 +44,30 @@ void p_faktorial(int a)
     std::cout << a << "!= " << faktorial(a) << std::endl;
 }
 
-int fibonacci (int a)
+int u1_global,u2_global;
+
+int fibonacci (int a, int u1, int u2)
 {
-    int b,c,d;
-    
-    b=0;
-    c=1;
-    if (a==1)
+    if (a <= 1)
     {
-        std::cout << d << "," ;
-        return d;
-    }
-    else
-    {  
-        d= b+c;
-        std::cout << d << ",";
-        d= b + c + fibonacci(a-1);
-        b= d;
-        c = b + c;
-        return d;
+        u1_global= 0;
+        std::cout << u1_global << std::endl;
+        return u1_global;
     }
     
+    else
+    {
+        u1 = u1 + u2;
+        std::cout << u1 << ", ";
+        a= a-1;
+        u2 = u1 + u2;
+        std::cout << u2 << ", ";
+        return fibonacci(a-1,u1,u2) + u2;
+    }
 }
 void p_fibonacci(int a)
 {
-    std::cout << "fibonacci "<< a << " = " << "0,1,"<< fibonacci(a) << std::endl;
+    u1_global = 0;
+    u2_global = 1;
+    std::cout << "fibonacci "<< a << " = " << fibonacci(a,u1_global,u2_global) << std::endl;
 }
