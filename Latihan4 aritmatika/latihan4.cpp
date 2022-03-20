@@ -18,7 +18,7 @@ int main()
     hasil = a - b;
     std::cout << a << " - " << b << " = " << hasil << "\n";
     //pembagian
-    hasil = (float)a / b;//mengubah tipe data variable a dan b dengan menuliskan tipe data yang mau diubah l
+    hasil = (float)a / b;//ini adalah casting tipe data atau maksudnnya kita mengubah tipe data dari a dan b dari integer ke float
     std::cout << a << " / " << b << " = " << hasil << "\n";
     //modulus
     //hasil = a % b;
