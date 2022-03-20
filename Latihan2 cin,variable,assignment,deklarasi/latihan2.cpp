@@ -4,6 +4,7 @@ Latihan 2 cin,variable, assignment, deklarasi
 2.  variable biasanya berupa huruf dan untuk C++ variable harus disertai dengan 
     tipe datanya untuk mendeklarasika variable itu dulu, dan variable sebagai tempat 
     penyimpanan data dari data yg kita masukkan
+3.  Variable adalah representasi dari alamat memori yang ada di dalam komputer
 */
 #include<iostream>
 
