@@ -6,8 +6,10 @@
        c.   pointer dilambangkan *
        d.   pointer tidak cocok dijadikan inputan karena jika dijadikan inputan maka poiter harus berisi pengalamatan 
             memorinya bukan valuenya
-       e.   Pointer adalah variable yang hanya bisa menyimpan memori
-    2. a.   reference adalah pengelamatan memori yang sama-sama disimpan oleh 2 variable
+       e.   Pointer adalah variable yang hanya bisa menyimpan memori, tetapi kita bisa mengambil value dari memori yang 
+            kita tuju dengan cara dereferensing, dereferensing adalah pengambilan value dari alamat memori di dalam pointer
+    2. a.   reference adalah sebuah alias dari variable lain yang nama variablenya berbeda tetapi memorinya sama karena 
+            reference mengambil pengalamatan memori yang sama dengan variable yg dituju
 */
 #include<iostream>
 
