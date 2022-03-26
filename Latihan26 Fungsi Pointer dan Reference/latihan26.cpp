@@ -17,16 +17,9 @@ void p_reference_luas_persegi(int &c)
     std::cout << "hasil volume persegi = " << (c) * (c) << std::endl;
 }
 
-void fungsi_pointer(int *b)
-{
-    std::cout << "nilai memori b = " <<  b << std::endl;
-    std::cout << "nilai b        = " << *b << std::endl;//dereferensi
-}
+void p_ptr_volume_persegi(int *);//prototype di dalam fungsi bisa kita tuliskan seperti ini atau kita tambahkan nama variable prototipenya
 
-void p_ptr_volume_persegi(int *aptr)
-{
-    std::cout << "hasil volume persegi = " << (*aptr) * (*aptr) * (*aptr) << std::endl;
-}
+void fungsi_pointer(int *b);
 
 int main(int argc, char const *argv[])
 {
@@ -45,4 +38,15 @@ int main(int argc, char const *argv[])
     p_reference_luas_persegi(a);
 
     return 0;
+}
+
+void p_ptr_volume_persegi(int *aptr)
+{
+    std::cout << "hasil volume persegi = " << (*aptr) * (*aptr) * (*aptr) << std::endl;
+}
+
+void fungsi_pointer(int *b)
+{
+    std::cout << "nilai memori b = " <<  b << std::endl;
+    std::cout << "nilai b        = " << *b << std::endl;//dereferensi
 }
