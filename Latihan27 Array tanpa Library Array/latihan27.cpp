@@ -9,7 +9,7 @@
 
 int main(int argc, char const *argv[])
 {
-    int nilai[3];
+    int nilai[4];
 
     std::cout << "di memori nilai[0] = " << &nilai[0] << " nilainya = " << nilai[0] << std::endl;//&nilai[0] adalah batas awal array
     std::cout << "di memori nilai[1] = " << &nilai[1] << " nilainya = " << nilai[1] << std::endl;
@@ -29,7 +29,7 @@ int main(int argc, char const *argv[])
     std::cout << std::endl; 
     
     int *ptr = nilai;//disini kita membuat pointer yg berisi memory dari array nilai yang punya tipe data integer
-    *(ptr+2)=6;//ini artinya kita akan mengubah tipe data array dengan index yg ke 2 dengan memakai pengalokasian memori dengan pointer lalu diubah ke angka 6
+    *(ptr+2)=6;//ini artinya kita menambahkan memori dari ptr yaitu nilai atau nilai array awal dan ditambah dengan 2, karena array nilai ini bertipe integer maka 2 akan di buat integer, integer ada 4 byte maka 2 akan di kali 4 sehingga hasilnya 8 lalu baru bisa ditambahkan yg hasilnya itu berupa memori yg terletak di index 2 lalu dideferensikan agar mengarah ke value lalu value awal akan diganti dengan value yg kita masukkan dengan tanda sama dengan
 
     nilai[1] = 2;//atau disini kita bisa mengubahnya langsung
 

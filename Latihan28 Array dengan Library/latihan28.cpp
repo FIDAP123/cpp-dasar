@@ -8,9 +8,9 @@
 
 int main(int argc, char const *argv[])
 {
-    std::array < int, 5 > nilai;//deklarasi ini hanya berlaku ketika kita memasukkan standard library array saja
+    std::array < long, 5 > nilai;//deklarasi ini hanya berlaku ketika kita memasukkan standard library array saja
 
-    for (int i = 0; i <= 4; i++)
+    for (long i = 0; i <= 4; i++)
     {
         nilai[i] = i;
         std::cout << "nilai [" << i << "] = " << nilai[i] << " alamatnya = " << &nilai[i] << std::endl;
