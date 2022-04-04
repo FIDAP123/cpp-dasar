@@ -1,6 +1,9 @@
 /*
     Latihan 35 Akses Substring :
-    1.  n
+    1.  Akses substring atau akses ke bagian dalam string, kita bisa menggunakan substr untuk menampilkan string 
+        didalamnya dengan index, lalu fungsi find untuk menemukan string yg ingin kita cari dalam satu variable
+    2.  Fungsi find sangat berguna sekali karena fungsi ini dapat mencari dan menyimpan index awal dari kata yg kita 
+        masukkan
 */
 
 #include<iostream>
@@ -17,7 +20,7 @@ int main(int argc, char const *argv[])
     std::cout << std::endl;
     
     std::cout << "Menampilkan Substring dari kalimat_2 di index ke-9 dan panjang 10 huruf : " << std::endl;
-    std::string kalimat_3 = kalimat_2.substr(9,10);//disini fungsi bisa disimpan di variable lain, tipe data variable simpan harus bertipe string, karena fungsi substr menghasilkan string
+    std::string kalimat_3 = kalimat_2.substr(kalimat_2.find("Programmer"),10);//disini fungsi bisa disimpan di variable lain, tipe data variable simpan harus bertipe string, karena fungsi substr menghasilkan string
     std::cout << kalimat_3 << std::endl;//disini kita bisa menampilkan variable kalimat_3 yg menunjuk ke variable kalimat_2
 
     std::cout << std::endl;
@@ -30,8 +33,10 @@ int main(int argc, char const *argv[])
     int kalimat_4 = kalimat_2.find("mau");
     std::cout << kalimat_4 << std::endl;
     std::cout << "Posisi index awal dari kata mau di kalimat_2 posisi 2 : ";
-    std::cout << kalimat_2.find("mau", kalimat_4 + 1) << std::endl;//fungsi find(kata yg dicari, variable + 1) untuk menunjuk ke kata yg dicari pada posisi kedua
-    //std::cout << kalimat_2.find("mau", kalimat_4 + 2) << std::endl; //hasilnya akan sama dengan yg diatas
+    std::cout << kalimat_2.find("mau", kalimat_4 + 1) << std::endl;//disini variable kalimat 4 valuenya berupa integer dari find variable kalimat_2 sehingga sama saja index posisi kalimat_2 tambah 1 yakni 0 + 1 maka find akan mencari setelah index 1
+    //rumusnya adalah variable.find(string kata yg dicari , posisi index untuk memulai pencarian sampai akhir string); 
+
+    std::cout << kalimat_2.find("mau") << std::endl;//fungsi find(kata yg dicari, variable + 1) untuk menunjuk ke kata yg dicari pada posisi kedua
     
     std::cout << std::endl;
     
