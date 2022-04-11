@@ -17,7 +17,8 @@ struct kucing//ini adalah sebuah tipe data kucing yg mempunyai komponen
 int main(int argc, char const *argv[])
 {
     kucing oyen;//kucing disini berlaku sebagai tipe data dan oyen adalah variable yg mempunyai komponen didalam sub data-nya
-    
+
+
     std::cout << "sebelum diberi komponen berupa value didalam variable atau sub datanya : " << std::endl;
     std::cout << "Kucing Oyen : " << std::endl;
     std::cout << "Nama = " << oyen.nama << std::endl;

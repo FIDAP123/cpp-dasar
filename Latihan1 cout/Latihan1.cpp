@@ -32,7 +32,8 @@ cin.get();//kegunannya adalah agar program tidak mengalami flasshing di windows,
 //flashing yaitu penutupan program otomatis ketika memasuki cmd di windows. jika sudah 
 //mengetikkan ini maka Program akan tertutup jika kita menekan "Enter" di keyboard
 
-return 0;//ini adalah gerbang penutup dari fungsi int main() artinya memeriksa dengan
-//memasukkan apakah 0 error didalam program ini.
+return 0;//ini adalah gerbang penutup dari fungsi int main(), karena fungsi main ini adalah fungsi
+//yg harus memakai return, dan nilai yg kita return kan yaitu 0 sesuai dengan tipe data dari fungsi 
+//main ini yaitu int
 
 }//penutup sebuah fungsi

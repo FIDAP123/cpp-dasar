@@ -1,3 +1,14 @@
+/*
+    Latihan 42 Ternary Operator :
+    1.  Ternery Operator adalah ("?")
+    2.  Ternary Operator berguna agar mempermudah kita
+    3.  Ternary operator berfungsi sebagai logika boolean yang akan 
+        mengeksekusi salah satu variable dari logika tersebut, variable pertama 
+        artinya variable untuk logika boolean true atau 1 dan variable kedua 
+        artinya variable untuk logika boolean false atau 0
+    4.  terary operator berfungsi agar memudahkan kita dalam membadingkan 2     
+        variable
+*/
 
 #include<iostream>
 
@@ -22,7 +33,8 @@ int main(int argc, char const *argv[])
         if (input_logika == "<")
         {
             std::cout << "Apakah " << angka_1 << " < " << angka_2 << " ?" << std::endl;
-            hasil = (angka_1 < angka_2) ? benar : salah ;
+            //std::cout << (angka_1 < angka_2) ? benar : salah;//disini ternary operator tidak akan menampilkan nilai value dari variable benar tetapi menampilkan nilai logika boolean yaitu true atau 1
+            hasil = (angka_1 > angka_2) ? benar : salah ;//disini ternary operator harus disimpan didalam variable lain yaitu hasil karena jika tidak maka yang ditampilkannya bukan value dari variable benar dan tidak tetapi logika boolean
             std::cout << hasil << std::endl;
             std::cout << std::endl;
             std::cout << "Apakah anda ingin mengulang ? (ketik \'ya\' atau \'tidak\')" << std::endl;
@@ -36,7 +48,14 @@ int main(int argc, char const *argv[])
         else if (input_logika == ">")
         {
             std::cout << "Apakah " << angka_1 << " > " << angka_2 << " ?" << std::endl;
-            hasil = (angka_1 > angka_2) ? benar : salah ;
+            if (angka_1>angka_2)//ini adalah versi panjang dari ternary operator yaitu berupa if dan else
+            {
+                hasil = benar;
+            }
+            else
+            {
+                hasil= salah;
+            }
             std::cout << hasil << std::endl;
             std::cout << std::endl;
             std::cout << "Apakah anda ingin mengulang ? (ketik \'ya\' atau \'tidak\')" << std::endl;
@@ -60,14 +79,6 @@ int main(int argc, char const *argv[])
             std::cout << std::endl;
         }   
     }
-
+    
     return 0;
 }
-
-
-
-
-
-
-
-
