@@ -30,66 +30,80 @@ int main()
    
     std::cout << "------------|String|-----------\n";
     std::cout << "Jumlah data   = " << sizeof(std::string) << " byte\n"; 
-    std::cout << "maksimal (+) = " << std::numeric_limits<std::string>::max() << " byte\n";
-    std::cout << "minimal (-)  = " << std::numeric_limits<std::string>::min() << " byte\n" << std::endl;
+    std::cout << "maksimal (+) = " << std::numeric_limits<std::string>::max() << " \n";
+    std::cout << "minimal (-)  = " << std::numeric_limits<std::string>::min() << " \n" << std::endl;
   //string tidak bisa di hitung jumlah data maksimal dan minimalnya 
-  //std::cout << "maksimal = " << std::numeric_limits<unsigned std::string>::max() << " byte\n";
-  //std::cout << "minimal = " << std::numeric_limits<unsigned std::string>::min() << " byte\n" << std::endl;
+  //std::cout << "maksimal = " << std::numeric_limits<unsigned std::string>::max() << " \n";
+  //std::cout << "minimal = " << std::numeric_limits<unsigned std::string>::min() << " \n" << std::endl;
 
     std::cout << "------------|char|-----------\n";
     std::cout << "Jumlah data   = " << sizeof(char) << " byte\n"; 
-    std::cout << "maksimal (+) = " << std::numeric_limits<char>::max() << " byte\n";
-    std::cout << "minimal (-)  = " << std::numeric_limits<char>::min() << " byte\n " << std::endl;
-    std::cout << "maksimal = " << std::numeric_limits<unsigned char>::max() << " byte\n"; 
-    std::cout << "minimal = " << std::numeric_limits<unsigned char>::min() << " byte\n" << std::endl;
+    std::cout << "maksimal (+) = " << std::numeric_limits<char>::max() << " \n";
+    std::cout << "minimal (-)  = " << std::numeric_limits<char>::min() << " \n " << std::endl;
+    std::cout << "maksimal = " << std::numeric_limits<unsigned char>::max() << " \n"; 
+    std::cout << "minimal = " << std::numeric_limits<unsigned char>::min() << " \n" << std::endl;
 
     std::cout << "------------|bool|-----------\n";
     std::cout << "Jumlah data   = " << sizeof(bool) << " byte\n"; 
-    std::cout << "maksimal (+) = " << std::numeric_limits<bool>::max() << " byte\n";
-    std::cout << "minimal (-)  = " << std::numeric_limits<bool>::min() << " byte\n " << std::endl;
-    //std::cout << "maksimal = " << std::numeric_limits<unsigned bool>::max() << " byte\n"; 
-    //std::cout << "minimal = " << std::numeric_limits<unsigned bool>::min() << " byte\n" << std::endl;
+    std::cout << "maksimal (+) = " << std::numeric_limits<bool>::max() << " \n";
+    std::cout << "minimal (-)  = " << std::numeric_limits<bool>::min() << " \n " << std::endl;
+    //std::cout << "maksimal = " << std::numeric_limits<unsigned bool>::max() << " \n"; 
+    //std::cout << "minimal = " << std::numeric_limits<unsigned bool>::min() << " \n" << std::endl;
     
     std::cout << "------------|Float|-----------\n";
     std::cout << "Jumlah data   = " << sizeof(float) << " byte\n";//sama seperti yang 
     //diatas tapi ini tipe datanya berupa float
-    std::cout << "maksimal (+) = " << std::numeric_limits<float>::max() << " byte\n"; 
+    std::cout << "maksimal (+) = " << std::numeric_limits<float>::max() << " \n"; 
     // mengetahui nilai maksimal dari suatu tipe data dengan menyertakan (+-)
-    std::cout << "minimal (-)  = " << std::numeric_limits<float>::min() << " byte\n" << std::endl;
+    std::cout << "minimal (-)  = " << std::numeric_limits<float>::min() << " \n" << std::endl;
     //sama seperti diatas tapi ini mengetahui nilai minimalnya
-    //std::cout << "maksimal = " << std::numeric_limits<unsigned float>::max() << " byte\n"; 
+    //std::cout << "maksimal = " << std::numeric_limits<unsigned float>::max() << " \n"; 
     // mengetahui nilai maksimal dari suatu tipe data dengan tidak menyertakan (+-) 
     //jadi semua bit terisi dengan bilangan biner
-    //std::cout << "minimal = " << std::numeric_limits<unsigned float>::min() << " byte\n" << std::endl;
+    //std::cout << "minimal = " << std::numeric_limits<unsigned float>::min() << " \n" << std::endl;
     //sama seperti diatas tapi ini mengetahui nilai minimalnya
     
     std::cout << "------------|double|-----------\n";
     std::cout << "Jumlah data   = " << sizeof(double) << " byte\n"; 
-    std::cout << "maksimal (+) = " << std::numeric_limits<double>::max() << " byte\n";
-    std::cout << "minimal (-)  = " << std::numeric_limits<double>::min() << " byte \n" << std::endl;
-    //std::cout << "maksimal = " << std::numeric_limits<unsigned double>::max() << " byte\n"; 
-    //std::cout << "minimal = " << std::numeric_limits<unsigned double>::min() << " byte\n" << std::endl;
+    std::cout << "maksimal (+) = " << std::numeric_limits<double>::max() << " \n";
+    std::cout << "minimal (-)  = " << std::numeric_limits<double>::min() << "  \n" << std::endl;
+    //std::cout << "maksimal = " << std::numeric_limits<unsigned double>::max() << " \n"; 
+    //std::cout << "minimal = " << std::numeric_limits<unsigned double>::min() << " \n" << std::endl;
     
     std::cout << "------------|short|-----------\n";
     std::cout << "Jumlah data   = " << sizeof(short) << " byte\n"; 
-    std::cout << "maksimal (+) = " << std::numeric_limits<short>::max() << " byte\n";
-    std::cout << "minimal (-)  = " << std::numeric_limits<short>::min() << " byte\n" << std::endl;
-    std::cout << "maksimal = " << std::numeric_limits<unsigned short>::max() << " byte\n"; 
-    std::cout << "minimal = " << std::numeric_limits<unsigned short>::min() << " byte\n" << std::endl;
+    std::cout << "maksimal (+) = " << std::numeric_limits<short>::max() << " \n";
+    std::cout << "minimal (-)  = " << std::numeric_limits<short>::min() << " \n" << std::endl;
+    std::cout << "maksimal = " << std::numeric_limits<unsigned short>::max() << " \n"; 
+    std::cout << "minimal = " << std::numeric_limits<unsigned short>::min() << " \n" << std::endl;
 
     std::cout << "------------|integer|-----------\n";
     std::cout << "Jumlah data   = " << sizeof(int) << " byte\n"; 
-    std::cout << "maksimal (+) = " << std::numeric_limits<int>::max() << " byte\n";
-    std::cout << "minimal (-)  = " << std::numeric_limits<int>::min() << " byte\n" << std::endl;
-    std::cout << "maksimal = " << std::numeric_limits<unsigned int>::max() << " byte\n"; 
-    std::cout << "minimal = " << std::numeric_limits<unsigned int>::min() << " byte\n" << std::endl;
+    std::cout << "maksimal (+) = " << std::numeric_limits<int>::max() << " \n";
+    std::cout << "minimal (-)  = " << std::numeric_limits<int>::min() << " \n" << std::endl;
+    std::cout << "maksimal = " << std::numeric_limits<unsigned int>::max() << " \n"; 
+    std::cout << "minimal = " << std::numeric_limits<unsigned int>::min() << " \n" << std::endl;
     
     std::cout << "------------|long|-----------\n";
     std::cout << "Jumlah data   = " << sizeof(long) << " byte\n"; 
-    std::cout << "maksimal (+) = " << std::numeric_limits<long>::max() << " byte\n";
-    std::cout << "minimal (-)  = " << std::numeric_limits<long>::min() << " byte\n " << std::endl;
-    std::cout << "maksimal = " << std::numeric_limits<unsigned long>::max() << " byte\n"; 
-    std::cout << "minimal = " << std::numeric_limits<unsigned long>::min() << " byte\n" << std::endl;
+    std::cout << "maksimal (+) = " << std::numeric_limits<long>::max() << " \n";
+    std::cout << "minimal (-)  = " << std::numeric_limits<long>::min() << " \n " << std::endl;
+    std::cout << "maksimal = " << std::numeric_limits<unsigned long>::max() << " \n"; 
+    std::cout << "minimal = " << std::numeric_limits<unsigned long>::min() << " \n" << std::endl;
 
+    std::cout << "------------|size_t|-----------\n";
+    std::cout << "Jumlah data   = " << sizeof(size_t) << " byte\n"; 
+    std::cout << "maksimal (+) = " << std::numeric_limits<size_t>::max() << " \n";
+    std::cout << "minimal (-)  = " << std::numeric_limits<size_t>::min() << " \n " << std::endl;
+    // std::cout << "maksimal = " << std::numeric_limits<unsigned size_t>::max() << " \n"; 
+    // std::cout << "minimal = " << std::numeric_limits<unsigned size_t>::min() << " \n" << std::endl;
+    
+    std::cout << "------------|ssize_t|-----------\n";
+    std::cout << "Jumlah data   = " << sizeof(ssize_t) << " byte\n"; 
+    std::cout << "maksimal (+) = " << std::numeric_limits<ssize_t>::max() << " \n";
+    std::cout << "minimal (-)  = " << std::numeric_limits<ssize_t>::min() << " \n " << std::endl;
+    // std::cout << "maksimal = " << std::numeric_limits<unsigned ssize_t>::max() << " \n"; 
+    // std::cout << "minimal = " << std::numeric_limits<unsigned ssize_t>::min() << " \n" << std::endl;
+    
     return 0;
 }
