@@ -1,1 +1,2 @@
 halo file 2 ios::trunc
+b
