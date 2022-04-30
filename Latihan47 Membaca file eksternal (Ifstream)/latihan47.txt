@@ -2,8 +2,8 @@ halo semua
 ini hewan ternakku
 
 table :
-no	nama		umur
-1.	kambing	2
-2. 	semut		1
-3.	gajah		10
-4.	nyamuk	2
+no	nama
+1 	kambing
+2 	semut
+3	gajah
+4	nyamuk
