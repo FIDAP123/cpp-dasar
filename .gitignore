@@ -1,1 +1,1 @@
-git rm -r -n directory
+git rm -r -n .vscode/
