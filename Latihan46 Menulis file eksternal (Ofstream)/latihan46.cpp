@@ -21,6 +21,8 @@ int main(int argc, char const *argv[])
 {
     std::ofstream file_ku;//di ofstream ada ios::out, ios::trunc, ios::app, file_ku adalah object file yg dibuat dari class offstream
     std::ofstream fileKulo ("0.file_ofstream_default.txt");//diini kita bisa menggunakan default untuk membuat fileya secara langsung
+    fileKulo << "default ofstream" << std::endl;
+    fileKulo.close();
     
     int angka = 2002;
     float desimal = 5.6f;
