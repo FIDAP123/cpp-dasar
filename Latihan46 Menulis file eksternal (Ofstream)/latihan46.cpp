@@ -20,7 +20,7 @@
 int main(int argc, char const *argv[])
 {
     std::ofstream file_ku;//di ofstream ada ios::out, ios::trunc, ios::app, file_ku adalah object file yg dibuat dari class offstream
-    std::ofstream fileKulo ("0.file_ofstream_default.txt");//diini kita bisa menggunakan default untuk membuat fileya secara langsung
+    std::ofstream fileKulo ("0.file_0_ofstream_default.txt");//diini kita bisa menggunakan default untuk membuat fileya secara langsung
     fileKulo << "default ofstream" << std::endl;
     fileKulo.close();
     
@@ -29,13 +29,13 @@ int main(int argc, char const *argv[])
     char huruf = 'b';
     std::string kata = "hai kamyuuu";
 
-    std::ofstream fileSaya ("3.file_3_out.txt", std::ofstream::out);//std::ios::out dan std::ios::trunc adalah default mending tidak usah diketik
+    std::ofstream fileSaya ("1.file_1_ofstream_out.txt", std::ofstream::out);//std::ios::out dan std::ios::trunc adalah default mending tidak usah diketik
     fileSaya << "halo yg disana" << std::endl;
     
-    std::ofstream fileAku ("test2.txt", std::ofstream::trunc);//std::ofstream::out dan std::ofstream::trunc sama dengan yg ios tadi dan itu jg tdk ush diketik
+    std::ofstream fileAku ("2.file_2_ofstream_trunc.txt", std::ofstream::trunc);//std::ofstream::out dan std::ofstream::trunc sama dengan yg ios tadi dan itu jg tdk ush diketik
     fileAku << "halo yg disini" << std::endl;
     
-    std::ofstream fileDana ("test3.txt", std::ofstream::app);
+    std::ofstream fileDana ("3.file_1_ofstream_app.txt", std::ofstream::app);
     fileDana << "hehehe\n" << std::endl;
 
     fileSaya.close();
@@ -43,45 +43,45 @@ int main(int argc, char const *argv[])
     fileDana.close();
 
     std::cout << "Membuat file 1 dengan default ofstream\n" << std::endl;
-    file_ku.open("1. file_1_default.txt");//ini artinya kita membuat folder file_1.txt
+    file_ku.open("4. file_1_default.txt");//ini artinya kita membuat folder file_1.txt
     file_ku << "halo file 1 default" << std::endl;
     file_ku.close();
     
     std::cout << "Membuat file 2 dengan default ofstream\n" << std::endl;
-    file_ku.open("2. file_2_default.txt");//ini artinya kita membuat folder file_1.txt
+    file_ku.open("5. file_2_default.txt");
     file_ku << "halo file 2 default" << std::endl;
     file_ku << angka << std::endl;
     file_ku.close();
 
     std::cout << "Membuat file 1 dengan ios out\n" << std::endl;
-    file_ku.open("3. file_1_ios_out.txt", std::ios::out);//ini artinya kita membuat folder file_1.txt
+    file_ku.open("6. file_1_ios_out.txt", std::ios::out);//ini artinya kita membuat folder file_1.txt
     file_ku << "halo file 1 ios::out" << std::endl;
     file_ku.close();
 
     std::cout << "Membuat file 2 dengan ios out\n" << std::endl;
-    file_ku.open("3. file_2_ios_out.txt", std::ios::out);//ios::out adalah sebagai default yg berfungsi sebagai operasi output
+    file_ku.open("7. file_2_ios_out.txt", std::ios::out);//ios::out adalah sebagai default yg berfungsi sebagai operasi output
     file_ku << "halo file 2 ios::out" << std::endl;
     file_ku << desimal << std::endl;//disini kita bisa menaruh variable tapi nantinya di file eksternal akan berbentuk string
     file_ku.close();
 
     std::cout << "Membuat file 1 dengan ios trunc\n" << std::endl;
-    file_ku.open("3. file_1_ios_trunc.txt", std::ios::trunc);//ios::trunc adalah sebagai default juga sama dengan ios::out, ios::trunc berfungsi untuk membuat file jika tidak ada dan jika ada maka file akan dihapus
+    file_ku.open("8. file_1_ios_trunc.txt", std::ios::trunc);//ios::trunc adalah sebagai default juga sama dengan ios::out, ios::trunc berfungsi untuk membuat file jika tidak ada dan jika ada maka file akan dihapus
     file_ku << "halo file 1 ios::trunc" << std::endl;
     file_ku.close();
 
     std::cout << "Membuat file 2 dengan ios trunc\n" << std::endl;
-    file_ku.open("4. file_2_ios_trunc.txt", std::ios::trunc);
+    file_ku.open("9. file_2_ios_trunc.txt", std::ios::trunc);
     file_ku << "halo file 2 ios::trunc" << std::endl;
     file_ku << huruf << std::endl;
     file_ku.close();
     
     std::cout << "Membuat file 1 dengan ios app\n" << std::endl;
-    file_ku.open("5. file_1_ios_app.txt", std::ios::app);//std::ios::app berfungsi untuk menuliskan pada akhir baris, app adalah kepanjangan append
+    file_ku.open("10. file_1_ios_app.txt", std::ios::app);//std::ios::app berfungsi untuk menuliskan pada akhir baris, app adalah kepanjangan append
     file_ku << "halo file 2 ios::app" << std::endl;
     file_ku.close();
     
     std::cout << "Membuat file 2 dengan ios app\n" << std::endl;
-    file_ku.open("6. file_2_ios_app.txt", std::ios::app);
+    file_ku.open("11. file_2_ios_app.txt", std::ios::app);
     file_ku << "halo file 2 ios::app" << std::endl;
     file_ku << kata << std::endl;
     file_ku.close();
