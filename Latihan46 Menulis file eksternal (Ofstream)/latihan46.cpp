@@ -10,7 +10,8 @@
     5.  std::ios::out berfungsi untuk operasi output, std::ios::trunc berfungsi untuk membuat file jika tidak ada dan 
         jika ada maka file akan dihapus sedangkan std::ios::app berfungsi untuk menuliskan pada akhir baris, app adalah 
         kepanjangan append
-    6.  kita bisa ketik std::ios atau std::ofstream setelah itu baru elemen didalamnya seperti ::out , ::trunc , ::app. Tapi lebih baik untuk ::out dan ::trunc tidak dituliskan karena itu merupakan defaultnya berbeda dengan ::app
+    6.  kita bisa ketik std::ios atau std::ofstream setelah itu baru elemen didalamnya seperti ::out , ::trunc , ::app. 
+        Tapi lebih baik untuk ::out dan ::trunc tidak dituliskan karena itu merupakan defaultnya berbeda dengan ::app
 */
 
 #include<iostream>
@@ -19,11 +20,26 @@
 int main(int argc, char const *argv[])
 {
     std::ofstream file_ku;//di ofstream ada ios::out, ios::trunc, ios::app, file_ku adalah object file yg dibuat dari class offstream
+    std::ofstream fileKulo ("0.file_ofstream_default.txt");//diini kita bisa menggunakan default untuk membuat fileya secara langsung
+    
     
     int angka = 2002;
     float desimal = 5.6f;
     char huruf = 'b';
     std::string kata = "hai kamyuuu";
+
+    std::ofstream fileSaya ("3.file_3_out.txt", std::ofstream::out);//std::ios::out dan std::ios::trunc adalah default mending tidak usah diketik
+    fileSaya << "halo yg disana" << std::endl;
+    
+    std::ofstream fileAku ("test2.txt", std::ofstream::trunc);//std::ofstream::out dan std::ofstream::trunc sama dengan yg ios tadi dan itu jg tdk ush diketik
+    fileAku << "halo yg disini" << std::endl;
+    
+    std::ofstream fileDana ("test3.txt", std::ofstream::app);
+    fileDana << "hehehe\n" << std::endl;
+
+    fileSaya.close();
+    fileAku.close();
+    fileDana.close();
 
     std::cout << "Membuat file 1 dengan default ofstream\n" << std::endl;
     file_ku.open("1. file_1_default.txt");//ini artinya kita membuat folder file_1.txt
@@ -69,17 +85,6 @@ int main(int argc, char const *argv[])
     file_ku << kata << std::endl;
     file_ku.close();
     
-    std::ofstream fileSaya ("3.file_3_out.txt", std::ofstream::out);//std::ios::out dan std::ios::trunc adalah default mending tidak usah diketik
-    std::ofstream fileAku ("test2.txt", std::ofstream::trunc);//std::ofstream::out dan std::ofstream::trunc sama dengan yg ios tadi dan itu jg tdk ush diketik
-    std::ofstream fileDana ("test3.txt", std::ofstream::app);
-
-    fileSaya << "halo yg disana" << std::endl;
-    fileAku << "halo yg disini" << std::endl;
-    fileDana << "hehehe\n" << std::endl;
-
-    fileSaya.close();
-    fileAku.close();
-    fileDana.close();
     
     return 0;
 }
