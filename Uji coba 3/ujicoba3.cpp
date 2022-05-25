@@ -3,14 +3,17 @@
 
 int main(int argc, char const *argv[])
 {
-    std::ofstream fileBuat("test.txt");
     std::ifstream fileku ("test.txt");
 
+    std::cout << fileku.tellg() << std::endl;
+    //std::cout << fileku.tellp() << std::endl;
+    fileku.seekg(3);
+    //fileku.sekkp(1);
     std::string kalimat;
     std::getline(fileku,kalimat);
     std::cout << kalimat << std::endl;
 
-    fileBuat.close();
+    //fileBuat.close();
     fileku.close();
 
     return 0;
