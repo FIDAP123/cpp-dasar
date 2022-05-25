@@ -49,6 +49,7 @@ int main () {
   // write to outputfile
   std::cout << "buffer 2 :\n";
   outputfile.write (buffer2,size1);
+  std::cout << "tellp = " << outputfile.tellp() << std::endl;
    
   std::cout << std::endl;
   std::cout << "buffer2 console :\n" << buffer2 << std::endl;

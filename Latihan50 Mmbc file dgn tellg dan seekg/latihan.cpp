@@ -9,11 +9,14 @@
 int main () 
 {
   std::fstream infile ("test.txt", std::ios::in | std::ios::binary);
+  std::fstream inputfile ("test2.txt", std::ios::in | std::ios::binary);
 
   // get length of file:
-  std::cout << "tellg 1 =" << infile.tellg() << std::endl;//disini tellg akan bernilai 0 karena kursor berada di index 0 atau index awal
+  std::cout << "tellp = " << infile.tellp() << std::endl;
+  std::cout << "tellg 1 = " << infile.tellg() << std::endl;//disini tellg akan bernilai 0 karena kursor berada di index 0 atau index awal
   infile.seekg (0, infile.end);
-  std::cout << "tellg 2 =" << infile.tellg() << std::endl;//disini tellg akan bernilai sesuai jumlah kata yg ada di dalam file karena kursor sudah berpindah dengan menggunakan perintah seekg
+  std::cout << "tellp = " << infile.tellp() << std::endl;
+  std::cout << "tellg 2 = " << infile.tellg() << std::endl;//disini tellg akan bernilai sesuai jumlah kata yg ada di dalam file karena kursor sudah berpindah dengan menggunakan perintah seekg
   int length = infile.tellg();
   infile.seekg (0, infile.beg);
 
@@ -32,7 +35,7 @@ int main ()
   // print content:
   std::cout << "infilei file : \n" << std::endl;
   std::cout.write (buffer1,length) << std::endl;
-    
+  std::cout << "tellp = " << infile.tellp() << std::endl;
   //delete buffer
   delete[] buffer;
 
