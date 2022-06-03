@@ -1,4 +1,7 @@
-// Copy a file
+/*
+  Latihan 51 Copy dan edit file txt dengan perintah tellg & seekg untuk mengatur input file, tellp & seekp untuk output file :
+  1.  b
+*/
 #include <fstream>      // std::ifstream, std::ofstream
 #include<iostream>
 
