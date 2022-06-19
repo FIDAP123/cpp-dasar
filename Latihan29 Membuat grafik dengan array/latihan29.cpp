@@ -1,6 +1,6 @@
 /*
     Latihan 29 Membuat Grafik dengan Array :
-    1.  Disini kita membuat grafik dari data array dengan * karena sistem c++ yg masih CLI
+    1.  Disini kita membuat grafik dari data array dengan *(tanda bintang/bukan pointer) karena sistem c++ yg masih CLI
     2.  Kita membuat ini dengan algoritma iterasi agar program kita lebih ringkas
 */
 

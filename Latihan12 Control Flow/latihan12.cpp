@@ -26,6 +26,7 @@ int main()
     {
         a++;//increment atau aritmatika pada looping harus diletakkan diatas continue 
         //agar sistem tidak eror
+        //continue; jika kita langsung memasang continue secara langsung maka do while akan hilang karena sudah di skip oleh continue
         switch (a)
         {
         case 5:

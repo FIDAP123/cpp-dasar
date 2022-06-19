@@ -12,6 +12,7 @@ double Keliling(double p, double l);
 void println_Luas(double p, double l);
 void println_Keliling(double p, double l);
 
+int main(int argc, char const *argv[]);
 int main(int argc, char const *argv[])
 {
     double panjang,lebar;

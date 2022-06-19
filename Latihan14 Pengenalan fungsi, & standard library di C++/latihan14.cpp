@@ -2,7 +2,6 @@
 latihan 14 : Pengenalan fungsi/ method, dan library internal/standard library dari C++
 1.  penambahan standard library bertujuan agar kode" yang kita tulis atau source code 
     yg kita tulis bisa di eksekusi
-2.  
 */
 
 #include<iostream>

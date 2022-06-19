@@ -1,6 +1,8 @@
 /*
     Latihan 28 Array dengan Library :
-    1.  b
+    1.  cara deklarasi dari variable array dengan memakai standard librarynya 
+        yaitu dengan menuliskan std::array < (tipedata) , (ukuran array) > (nama 
+        variable)
 */
 
 #include<iostream>
@@ -10,9 +12,9 @@ int main(int argc, char const *argv[])
 {
     std::array < long, 5 > nilai;//deklarasi ini hanya berlaku ketika kita memasukkan standard library array saja
 
-    for (long i = 0; i <= 4; i++)
+    for (long i = 0; i <= nilai.size()-1 ; i++)
     {
-        nilai[i] = i;
+        nilai[i] = i;//disini karena array belum diisi maka saya isi dengan variable i juga dan variable i sekaligus menjadi index-nya
         std::cout << "nilai [" << i << "] = " << nilai[i] << " alamatnya = " << &nilai[i] << std::endl;
     }
     

@@ -1,3 +1,8 @@
+/*
+    Latihan 4 Aritmatika :
+    1.  sama seperti operasi di semua bahasa pemrograman
+*/
+
 #include <iostream>
 
 int main()

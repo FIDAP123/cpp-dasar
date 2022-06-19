@@ -38,7 +38,7 @@ int main(int argc, char const *argv[])
         std::cout << "9. variable scope global = " << ::x << std::endl;//nah disini kita masih bisa mengakses variable global tetapi kita tidak bisa mengakses variable lokal dari fungsi ini karena terkena variable block dari fungsi ini jadi yang tampil variable blocknya saja
     }
     std::cout << "10. variable scope local dari fungsi main = " << x << std::endl;//disini variable x yang ada di dalam block tidak akan terpanggil karena kita memanggilnya diluar block tersebut sehingga yang terpanggil adalah variable lokalnya
-    std::cout << "11. variable scope global = " << ::x << std::endl;//disini variable global masih bisa dipanggil karina scopenya global berbeda dengan variable local yang diatas ketika terkena block
+    std::cout << "11. variable scope global = " << ::x << std::endl;//disini variable global masih bisa dipanggil karena scopenya global berbeda dengan variable local yang diatas ketika terkena block
     std::cout << "12. variable scope local dari fungsi main = " << x << std::endl;
     return 0;
 }
