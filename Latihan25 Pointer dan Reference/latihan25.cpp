@@ -61,5 +61,6 @@ int main(int argc, char const *argv[])
     std::cout << "memori nilai a = " << a << std::endl;
     std::cout<< "memori nilai dari a = " << &a << std::endl;
     // disini nilai value atau memori dari a dan b akan sama karena reference
+    std::cin.get();
     return 0;
 }
