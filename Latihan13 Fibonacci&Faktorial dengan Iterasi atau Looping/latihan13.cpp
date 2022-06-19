@@ -2,7 +2,7 @@
 Latihan 13 : membuat deret fibonacci dengan mrnggunakan Loop
 1.  Deret Fibonacci merupakan deret aritmatika, dan tentu saja kita harus memakai 
     logika untuk bisa menghitung deret selanjutnya
-2.  di dama Deret ini terdapat rumus f(n1) = f1(n-1) - f2(n-2) dan rumus setelahnya 
+2.  di dalam Deret ini terdapat rumus f(n1) = f1(n-1) - f2(n-2) dan rumus setelahnya 
     f(n2) = f(n1) + f1
 */
 #include <iostream>

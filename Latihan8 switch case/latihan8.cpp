@@ -1,8 +1,7 @@
 /*
 Latihan 8 Switch Case :
-1.  Switch Case merupakan tools yg disediakan oleh library iostream, cara kerjanya 
-    hampir sama seperti if else dan elif yg berbeda adalah switch case akan mengekseku
-    si program dibawahnya sampai akhir,
+1.  Cara kerjanya hampir sama seperti if else dan elif yg berbeda adalah switch case 
+    akan mengeksekusi program dibawahnya sampai akhir,
 2.  Untuk mempermudah kita bisa menggunakan break, break merupakan bagian dari control
     flow, yg fungsinya untuk mengatur alur
 */
