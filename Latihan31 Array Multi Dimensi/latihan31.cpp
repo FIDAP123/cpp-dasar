@@ -21,7 +21,7 @@ void arr_fungsi (int *, int baris, int kolom);//untuk prototype dari pointer kit
 void arr_fungsiMD (std::array<std::array<int,kolom>,baris> &nilai_array);
 
 int main(int argc, char const *argv[])
-{\
+{
     std::cout << "Array yg tdk/ dgn library dan dgn variable const" << std::endl;
     
     int arr_1[baris][kolom] = {0,1,2,3};

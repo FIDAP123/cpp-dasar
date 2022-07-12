@@ -1,7 +1,9 @@
 /*
     Latihan 40 Union :
-    1.  Union hanya digunakan untuk pembuatan data yg hanya terpaku pada 1 tipe data saja, karena jika kita memasukkan kedalamnya banyak tipe data sekaligus maka seperti yg ada di bawah akan menibulkan error atau hasil yg acak
-    2.  Union memakai 1 block data yg sama di memori makanya hasilnya akan eror atau acak jika kita memasukkan tipe data yg berbeda dalam satu komponen data yg bertipe union
+    1.  Union hanya digunakan untuk pembuatan data yg hanya terpaku pada 1 tipe data saja, karena jika kita memasukkan 
+        kedalamnya banyak tipe data sekaligus maka seperti yg ada di bawah akan menibulkan error atau hasil yg acak
+    2.  Union memakai 1 block data yg sama di memori makanya hasilnya akan eror atau acak jika kita memasukkan tipe data 
+        yg berbeda dalam satu komponen data yg bertipe union
 */
 
 #include<iostream>

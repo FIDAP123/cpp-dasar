@@ -1,5 +1,5 @@
 /*
-  Latihan 50 Membaca file dengan tellg dan seekg :
+  Latihan 49 Membaca file dengan tellg dan seekg :
   1.  tellg dan seekg merupakan function yg hanya dapat digunakan di input file stream atau ifstream
   2.  tellg bernilai 0 jika kita tidak menggerakkan kursor dengan perintah seekg
   3.  tellp bisa dipakai dan fungsinya sama dengan tellg tapi lebih baik memakai tellg untuk mengetehui ukuran filenya

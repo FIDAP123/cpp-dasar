@@ -1,6 +1,8 @@
 /*
     Latihan 33 String & Operasi pada String : 
-    1.  b
+    1.  kita bisa membuat string dengan menyusun char atau kita bisa langsung memakai library string
+    2.  kita bisa mengganti beberapa huruf atau kata didalam satu variable string dengan menggunakan index, karena string 
+        merupakan kumpulan dari char
 */
 
 #include<iostream>
