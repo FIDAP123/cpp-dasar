@@ -1,6 +1,8 @@
 /*
   Latihan 50 Copy dan edit file txt dengan perintah tellg & seekg untuk mengatur input file, tellp & seekp untuk output file :
-  1.  b
+  1.  Cara copy file adalah dengan membaca file terlebih dahulu atau menyimpannya di dalam variable lalu kemudian menulis 
+      di file lainnya yang bertipe ofstream
+  2.  Cara membaca file adalah dengan menuliskan variable file kemudian ditambah ".read()". Di dalam ".read()" ada variable char sebagai penyimpan dengan ukurannya dari variable angka yang didapat dari menghitung jumlah huruf termasuk spasi didalam file, dengan cara mengarahkan kursor dengan function ".seekg()". Di dalamnya ada di posisi awal yaitu 0 lalu koma "," variable file ".end" atau sampai akhir dari file, yg bertujuan agar file fibaca sampai akhir. Kemudian disimpanlah kedalam variable angka tadi.
 */
 #include <fstream>      // std::ifstream, std::ofstream
 #include<iostream>
