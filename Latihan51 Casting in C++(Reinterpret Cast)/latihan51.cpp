@@ -1,15 +1,14 @@
 /*
-	Latihan 48 Casting in C static cast :
-	1. 	Static_cast adalah salah satu dari 4 jenis casting di C dengan menerjemahkan tipe data secara implicit atau 
-		membiarkan compiler bekerja dan lebih aman dibanding reinterprate_cast
+    Latihan 51 Casting in C++ with Reinterpret Cast :
+    1.  c
 */
-
 #include <iostream>
 using namespace std;
 
 int main(int argc, char const *argv[])
 {   
 	// int* p = new int(65);
+	
 	int p = 28/10;
 	// int* pa ;
 	float ch;
