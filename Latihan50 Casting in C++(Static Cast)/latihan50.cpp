@@ -9,6 +9,7 @@
 int main(int argc, char const *argv[])
 {   
 	std::cout << "1. Static cast bisa digunakan untuk implicit cast dan eksplicit cast" << std::endl;
+	std::cout  << std::endl;
 
 	float desimal_1 = 9.54;
 	int bulat_2 = 29;
@@ -41,10 +42,75 @@ int main(int argc, char const *argv[])
 	std::cout << "bulat ke integer = " << desimal_1 << std::endl;
 
 	std::cout  << std::endl;
+	std::cout  << std::endl;
 
 	std::cout << "2. Static cast bisa digunakan untuk conversion constructor & conversion operator OOP/PBO di C++" << std::endl;
+	std::cout  << std::endl;
 
+	class Mahasiswa
+	{
+		int angka_bulat;
+		
+		public:
+			Mahasiswa(int x=0)//artinya constructor class Mahasiswa dengan parameter argumen default int x = 0 dengan value dari data member angka bulat diisi dengan value dari variable x dari variable constructor
+			{
+				angka_bulat = x;
+			}
+			//Mahasiswa(int x=0):{angka_bulat}
+			// {
+
+			// }
+			// kita bisa menulis constructor seperti diatas, constructor diatas adalah constructor yang ada di c++ & berguna agar kodingan atau syntax kita jadi lebih ringkas
+
+			void tampilkan_nilai()
+			{
+				std::cout << "nilai angka = " << angka_bulat << std::endl;
+			}
+
+			operator std::string () 
+			{
+				std::cout<< "conversion operator" << std::endl;
+				return std::to_string(angka_bulat);
+			}
+				
+	};
+
+	std::cout << "a. conversion constructor & conversion operator biasa" << std::endl;
+	std::cout << std::endl;
+
+	Mahasiswa mahasiswa_1(8);
+	mahasiswa_1.tampilkan_nilai();
+	mahasiswa_1 = 9;//ini adalah conversion constructor, ini berfungsi mengubah dan memasukkan value yang kita tulis ke data member
+	mahasiswa_1.tampilkan_nilai();
+
+	std::string huruf_1 = mahasiswa_1;//disini merupakan conversion operator karena kita mengubah valuenya dengan menyimpan perubahan ke variable lain dengan memanfaatkan keyword operator didalam class sehingga kita tidak perlu mengubahnya sendiri dengan memakai fugsi std::tostring karena sudah diubah disana
+	std::cout << "hasil pengubahan menjadi huruf atau string" + huruf_1 << std::endl;//dengan memakai conversion operator ke string kita mengubah value ke string dan kita bisa menggunakan operasi
+
+	std::cout << std::endl;
+
+	std::cout << "b. conversion constructor & conversion operator dengan static cast" << std::endl;
+	std::cout << std::endl;
 	
+	mahasiswa_1 = static_cast<int>(10);
+	// mahasiswa_1 = static_cast<std::string>(10);//disini tidak bisa karena variable untuk menyimpan yaitu constructornya mempunyai tipe data int, jadi harus diubah int sesuai tipe data yang akan disimpan
+	mahasiswa_1.tampilkan_nilai();
+	
+	std::string huruf_2 = static_cast<std::string>(mahasiswa_1);
+	mahasiswa_1.tampilkan_nilai();
+	
+	std::cout << std::endl;
+	std::cout << std::endl;
+
+	std::cout << "3. Static cast lebih aman digunakan untuk pengubahan tipe data dibanding menggunakan c-style cast" << std::endl;
+
+	std::cout << "a. casting dengan c-style cast" << std::endl;
+	std::cout << std::endl;
+
+	char huruf ;//disini variable huruf mempunyai memori alocation 1 byte karena bertipe character
+	int angka = static_cast<int>(huruf);//disini kita mengubah dari 
+	std::cout <<" angka = " << angka << std::endl;
+	angka = 90;
+	std::cout <<" angka = " << angka << std::endl;
 
 	return 0;
 }
