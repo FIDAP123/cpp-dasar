@@ -103,14 +103,42 @@ int main(int argc, char const *argv[])
 
 	std::cout << "3. Static cast lebih aman digunakan untuk pengubahan tipe data dibanding menggunakan c-style cast" << std::endl;
 
-	std::cout << "a. casting dengan c-style cast" << std::endl;
+	std::cout << "a. casting dengan c-style cast secara explicit" << std::endl;
+	std::cout << std::endl;
+	char huruf_3;
+	std::cout <<"\thuruf = " << huruf_3 << std::endl;
+	int angka_3 = (int)huruf_3;//disini tidak masalah memakai c-style casting dengan secara explicit karena bukan memakai pointer yang berarti akan membuat alamat baru.
+	std::cout <<"\tangka = " << angka_3 << std::endl;
+
+	std::cout << std::endl;
+	char huruf_4 ;//disini variable huruf mempunyai memori alocation 1 byte karena bertipe character
+	std::cout <<"\thuruf = " << huruf_4 << std::endl;//disini variable huruf_4 akan tidak berisi atau None tapi kita bisa menampilkan dengan cout karena yang kita deklarasikan bukan pointer
+	int* angka_4 = (int*)&huruf_4;///disini kita mengubah tipe datanya dengan tipe data integer yang berjumlah 4 byte memori dan merupakan sebuah pointer hal ini sangat berbahaya jika berkaitan dengan pointer karena dengan explicit cast disini maka alamat yang tadinya char dengan 1 byte memori akan mengambil alamat sebelahnya sehingga alamat memori menjadi 4 byte yaitu alamat dari integer. Nah berbahayanya jikalau alamat memori yang diambil adalah yang terpakai di komputer maka akan menyebabkan program yang kita run error atau merusak memori kita. 
+	std::cout <<"\tangka = " << *angka_4 << std::endl;//disini buktinya value pointer angka jadi banyak karena hasil dari pengubahan tipe data char ke integer dengan menggabungkan alamat memori sebelahnya agar menjadi integer, hal ini berbahaya
+
+	std::cout << std::endl;
+	char* huruf_5 ;//disini variable huruf mempunyai memori alocation 1 byte karena bertipe character
+	std::cout <<"\thuruf = " << &huruf_5 << std::endl;//disini karena char pointer huruf_5 masih kosong maka kita hanya bisa menampilkan keberedaannya di alamat memori kita
+	int* angka_5 = (int*)huruf_5;//disini sama dengan yang diatas namun hanya saja kedua variable sama" pointer.
+	std::cout <<"\tangka = " << *angka_5 << std::endl;
 	std::cout << std::endl;
 
-	char huruf ;//disini variable huruf mempunyai memori alocation 1 byte karena bertipe character
-	int angka = static_cast<int>(huruf);//disini kita mengubah dari 
-	std::cout <<" angka = " << angka << std::endl;
-	angka = 90;
-	std::cout <<" angka = " << angka << std::endl;
+	std::cout << "b. casting dengan static cast" << std::endl;
+	std::cout << std::endl;
+	char huruf_6;
+	std::cout <<"\thuruf = " << huruf_6 << std::endl;
+	int angka_6 = static_cast<int>(huruf_6);// ini berhasil karena tidak ada masalah pada compile time yang bisa menyebabkan error pada program.
+	std::cout <<"\tangka = " << angka_6 << std::endl;
+	std::cout << std::endl;
+
+	char huruf_7 ;
+	std::cout <<"\thuruf = " << huruf_7 << std::endl;
+	// int* angka_7 = static_cast<int*>(&huruf_7);// ini tidak akan bisa di compile karena ini merupakan hal yang berbahaya di memori dengan static cast karena static cast berguna memeriksa kesalahannya dulu saat compile time.
+	// std::cout <<"\tangka = " << *angka_7 << std::endl;
+	char* huruf_8 ;
+	std::cout <<"\thuruf = " << &huruf_8 << std::endl;
+	// int* angka_8 = static_cast<int*>(huruf_8);//ini juga sama seperti yang diatas, static cast sangat cocok ketika kita ingin mengubah tipe data dari variable
+	// std::cout <<"\tangka = " << *angka_8 << std::endl;
 
 	return 0;
 }
