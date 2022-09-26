@@ -17,11 +17,11 @@ int main(int argc, char const *argv[])
 	std::cout << "a. Implicit Cast Biasa\n" << std::endl;
 
 	bulat_2 = desimal_1 + 0.9;//ditambah dengan float supaya bisa mengecek tipe data dari variable hasilnya, karena c++ tipe data float tidak ada penanda desimal atau koma nol(.0)
-	std::cout << "desimal ke bulat = " << bulat_2 << std::endl;//jika casting biasa untuk tipe data dari value ditentukan berdasarkan tipe data dari variablenya
+	std::cout << "\tdesimal ke bulat = " << bulat_2 << std::endl;//jika casting biasa untuk tipe data dari value ditentukan berdasarkan tipe data dari variablenya
 	
 	bulat_2 = 29;//inisialisasi disini berfungsi agar valuenya kembali ke awal
 	desimal_1 = bulat_2 + 0.9;
-	std::cout << "bulat ke desimal = " << desimal_1 << std::endl;	
+	std::cout << "\tbulat ke desimal = " << desimal_1 << std::endl;	
 
 	std::cout  << std::endl;
 	
@@ -29,17 +29,17 @@ int main(int argc, char const *argv[])
 
 	desimal_1 = 9.54;
 	bulat_2 = static_cast<int>(desimal_1+0.9);
-	std::cout << "desimal ke integer (bulat isi)= " << bulat_2 << std::endl;
+	std::cout << "\tdesimal ke integer (bulat isi)= " << bulat_2 << std::endl;
 	desimal_1 = 9.54;
 	bulat_2 = static_cast<float>(desimal_1)+ 0.9;
-	std::cout << "desimal ke float (bulat isi)= " << bulat_2 << std::endl;
+	std::cout << "\tdesimal ke float (bulat isi)= " << bulat_2 << std::endl;
 
 	bulat_2 = 29;
 	desimal_1 = static_cast<float>(bulat_2 + 0.9);
-	std::cout << "bulat ke float = " << desimal_1 << std::endl;
+	std::cout << "\tbulat ke float = " << desimal_1 << std::endl;
 	bulat_2 = 29;
 	desimal_1 = static_cast<int>(bulat_2 + 0.9);//hasilnya tetap tipe float tetapi karena kita memakai static cast yang berguna untuk casting tipe data maka hasilnya akan berupa integer tetapi tipe data variable akhirnya masihlah float dan untuk c++ sendiri tidak ada koma nol(.0) maka valuenya seperti tipe data integer namun tipe data dan value dari variable akhirnya tetap float
-	std::cout << "bulat ke integer = " << desimal_1 << std::endl;
+	std::cout << "\tbulat ke integer = " << desimal_1 << std::endl;
 
 	std::cout  << std::endl;
 	std::cout  << std::endl;
@@ -64,15 +64,14 @@ int main(int argc, char const *argv[])
 
 			void tampilkan_nilai()
 			{
-				std::cout << "nilai angka = " << angka_bulat << std::endl;
+				std::cout << "\tnilai angka = " << angka_bulat << std::endl;
 			}
 
 			operator std::string () 
 			{
-				std::cout<< "conversion operator" << std::endl;
+				std::cout<< "\tconversion operator" << std::endl;
 				return std::to_string(angka_bulat);
-			}
-				
+			}			
 	};
 
 	std::cout << "a. conversion constructor & conversion operator biasa" << std::endl;
@@ -84,7 +83,7 @@ int main(int argc, char const *argv[])
 	mahasiswa_1.tampilkan_nilai();
 
 	std::string huruf_1 = mahasiswa_1;//disini merupakan conversion operator karena kita mengubah valuenya dengan menyimpan perubahan ke variable lain dengan memanfaatkan keyword operator didalam class sehingga kita tidak perlu mengubahnya sendiri dengan memakai fugsi std::tostring karena sudah diubah disana
-	std::cout << "hasil pengubahan menjadi huruf atau string" + huruf_1 << std::endl;//dengan memakai conversion operator ke string kita mengubah value ke string dan kita bisa menggunakan operasi
+	std::cout << "\thasil pengubahan menjadi huruf atau string" + huruf_1 << std::endl;//dengan memakai conversion operator ke string kita mengubah value ke string dan kita bisa menggunakan operasi
 
 	std::cout << std::endl;
 
@@ -102,6 +101,7 @@ int main(int argc, char const *argv[])
 	std::cout << std::endl;
 
 	std::cout << "3. Static cast lebih aman digunakan untuk pengubahan tipe data dibanding menggunakan c-style cast" << std::endl;
+	std::cout << std::endl;
 
 	std::cout << "a. casting dengan c-style cast secara explicit" << std::endl;
 	std::cout << std::endl;
@@ -140,5 +140,54 @@ int main(int argc, char const *argv[])
 	// int* angka_8 = static_cast<int*>(huruf_8);//ini juga sama seperti yang diatas, static cast sangat cocok ketika kita ingin mengubah tipe data dari variable
 	// std::cout <<"\tangka = " << *angka_8 << std::endl;
 
+	std::cout << "4. Static cast lebih aman untuk menunjuk atau menuju ke class lain" << std::endl;
+	std::cout << std::endl;
+
+	class Based {};
+	class Derived : private Based {};
+	
+	Derived d1;
+	
+	std::cout << "a. menunjuk atau menuju ke private class dengan c-style cast explicit" <<std::endl;
+	std::cout << std::endl;
+	Based *bp1 = (Based*)&d1;
+	//std::cout << *bp1 << std::endl;//disini kita tidak bisa menampilkan bp1 karena class Based berisi kosong
+	std::cout << "\tBased *bp1 = (Based*)&d1;" << std::endl;
+	std::cout << std::endl;
+
+	std::cout << "b. menunjuk atau menuju ke private class dengan static cast" <<std::endl;
+	std::cout << std::endl;
+	//Based *bp2 = static_cast<Based*>(&d1);//disini dengan memakai static cast kita bisa menunjuk class dengan menghindari yang private
+	std::cout << "\terror karena static cast menghindari private class yg berarti lebih aman" << std::endl;
+	std::cout << std::endl;
+
+	std::cout << "5. Static cast bisa digunakan untuk menunjuk class lain sama seperti c-style cast tapi lebih aman" << std::endl;
+	std::cout << std::endl;
+	class Base {};
+	class Derived3 : public Base {};
+	class Derived2 : public Base {};
+
+	Derived3 d3;
+	Derived2 d2;
+
+	std::cout << "a. static cast berguna untuk menunjuk atau menuju class lain" <<std::endl;
+	std::cout << std::endl;
+	Base *bp3 = static_cast<Base*>(&d3);
+	Base *bp2 = static_cast<Base*>(&d2);
+	std::cout << "Base *bp2 = static_cast<Base*>(&d2);" << std::endl;
+
+	Derived3 *d3p = static_cast<Derived3*>(bp2);
+	Derived2 *d2p = static_cast<Derived2*>(bp3);
+	std::cout << std::endl;
+
+	std::cout << "6. Static cast bisa digunakan untuk menunjuk class lain sama seperti c-style cast tapi lebih aman" << std::endl;
+	std::cout << std::endl;
+
+	int i = 10;
+	std::cout << "i = " << i << std::endl;
+	void *v = static_cast<void*>(&i);
+	std::cout << "v = " << v << std::endl;
+	int *ip = static_cast<int*>(v);
+	std::cout << "*v = " << *ip << std::endl;
 	return 0;
 }
