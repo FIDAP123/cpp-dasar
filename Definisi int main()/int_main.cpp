@@ -13,7 +13,7 @@
 */
 #include <iostream>
 
-int main(int argc, char** argv) //bisa ditulis int main() atau int main(int argc, char const *argv[])
+int main(int argc, char const *argv[]) //bisa ditulis int main() atau int main(int argc, char const *argv[])
 {
     std::cout << "Have " << argc << " arguments:" << std::endl;
     for (int i = 0; i <argc; ++i) 
@@ -22,4 +22,4 @@ int main(int argc, char** argv) //bisa ditulis int main() atau int main(int argc
     }
     
     return 0;//mengembalikan nilai argc ke nol agar program dapat di eksekusi
-}
+}               
