@@ -10,14 +10,14 @@
 
 int main(int argc, char const *argv[])
 {
-    std::array < long, 5 > nilai;//deklarasi ini hanya berlaku ketika kita memasukkan standard library array saja
+    const long angka = 5;
+    std::array < long, angka > nilai;//deklarasi ini hanya berlaku ketika kita memasukkan standard library array saja
 
     for (long i = 0; i <= nilai.size()-1 ; i++)
     {
         nilai[i] = i;//disini karena array belum diisi maka saya isi dengan variable i juga dan variable i sekaligus menjadi index-nya
         std::cout << "nilai [" << i << "] = " << nilai[i] << " alamatnya = " << &nilai[i] << std::endl;
     }
-    
     std::cout << std::endl;
     std::cout << "ukuran array = " << nilai.size() << std::endl;//disini kita menuliskan fungsi dari library array yg bertujuan agar kita dapat melihat berapa ukuran array yg akan kita tampilkan
     //sebenarnya nilai ukuran array ini adalah ukuran array yg ingin kita buat diawal ketika kita mendeklarasikannya

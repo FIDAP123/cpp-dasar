@@ -9,7 +9,8 @@
 
 int main(int argc, char const *argv[])
 {
-    int nilai[4];
+    int angka = 4;
+    int nilai[angka];
 
     std::cout << "di memori nilai[0] = " << &nilai[0] << " nilainya = " << nilai[0] << std::endl;//&nilai[0] adalah batas awal array
     std::cout << "di memori nilai[1] = " << &nilai[1] << " nilainya = " << nilai[1] << std::endl;
