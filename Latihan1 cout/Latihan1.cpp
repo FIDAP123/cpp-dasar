@@ -4,6 +4,7 @@ Latihan 1 C++ : Pegertian awal
     membutuhkan compiler untuk menerjemahkan bahasa pemrograman atau source code
     (kode sumber) ke bahasa mesin, sehingga bahasa ini lebih cepat di proses mesin 
     dibanding bahasa interpreter atau iterpreted language
+
 */
 
 #include <iostream> //#include adalah kita akan meng-include atau memasukkan file atau 
